@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <title>Choropleth Map by Christina</title>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <h4 id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h4>
+    <div id="tooltip"></div>
+    <svg id="canvas">
+        <svg id="legend">
+            <rect x="860" y="500" width="20" height="20" fill="tomato"></rect>
+            <text x="890" y="515" fill="black">Less than 15%</text>
+    
+            <rect x="860" y="520" width="20" height="20" fill="orange"></rect>
+            <text x="890" y="535" fill="black">15% - 30%</text>
+    
+            <rect x="860" y="540" width="20" height="20" fill="lightgreen"></rect>
+            <text x="890" y="555" fill="black">30% - 45%</text>
+    
+            <rect x="860" y="560" width="20" height="20" fill="limegreen"></rect>
+            <text x="890" y="575" fill="black">Over 45%</text>
+        </svg>
+    </svg>
+    
+    <script defer src='script.js'></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
